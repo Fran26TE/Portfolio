@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #333333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* -------------- MODO DIURNO -------------- */
+
+/* ----------------------------------------- */
+
+.fondo.tema {
+    background-color: #F2F2F2;
+}
+
+.menu.tema {
+    background-color: rgba(212, 212, 212, 0.9);
+}
+
+.menu.tema a {
+    color: #333333;
+}
+
+.menu.tema a:visited {
+    color: #333333;
+}
+
+.menu.tema a:hover {
+    color: #D4B244;
+}
+
+.bienvenido.tema p {
+    color: #333333;
+}
+
+.proyectos.tema h2 {
+    background-color: rgba(212, 212, 212, 0.9);
+}
+
+.proyectos.tema .categorias a.activo {
+    color: #333333;
+}
+
+.proyectos.tema .grid p {
+    color: #333333;
+}
+
+.proyectos.tema .grid .info {
+    background: rgba(212, 212, 212, 0.9);
+}
+
+.contacto.tema h2 {
+    background-color: rgba(212, 212, 212, 0.9);
+}
+
+.pie.tema .creado-por {
+    background-color: rgba(212, 212, 212, 0.9);
+    color: #333333;
+}
+
+
+/* -------------- MENÚ -------------- */
+
+/* ---------------------------------- */
+
+.menu {
+    background-color: rgba(43, 43, 43, 0.9);
+    position: fixed;
+    z-index: 1;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
+    border-width: 2px;
+    border-color: #D4B244;
+}
+
+.menu .boton {
+    text-align: right;
+    margin: auto;
+}
+
+.menu button {
+    border-radius: 50px;
+    width: 27.7px;
+    height: 28.2px;
+    cursor: pointer;
+    background-color: rgb(16, 138, 255);
+}
+
+header button img {
+    display: block;
+    margin: auto;
+}
+
+.lista {
+    padding: 0;
+}
+
+.lista li {
+    display: inline;
+}
+
+.lista li a {
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    color: #fff;
+}
+
+.menu a:hover {
+    color: #D4B244;
+}
+
+.posicion1 {
+    padding-top: 100px;
+}
+
+.posicion2 {
+    padding-top: 100px;
+}
+
+
+/* -------------- BIENVENIDO -------------- */
+
+/* ---------------------------------------- */
+
+.bienvenido {
+    padding-top: 100px;
+    color: #F2F2F2;
+    text-align: center;
+    margin-bottom: 40px 0;
+}
+
+.bienvenido h1 {
+    color: #D4B244;
+}
+
+.bienvenido p {
+    color: #F2F2F2;
+}
+
+.curriculum {
+    color: #D4B244;
+}
+
+.curriculum a {
+    color: #D4B244;
+}
+
+.curriculum a:visited {
+    color: #D4B244;
+}
+
+
+/* -------------- PROYECTOS -------------- */
+
+/* --------------------------------------- */
+
+.proyectos h2 {
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 15px;
+    color: rgb(200, 3, 111);
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgba(43, 43, 43, 0.9);
+}
+
+.proyectos .categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.proyectos .categorias a {
+    color: rgb(200, 3, 111);
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.proyectos .categorias a.activo {
+    color: #F2F2F2;
+}
+
+/* --------- INFO PROYECTOS --------- */
+
+.info {
+    border-radius: 15px;
+    font-family: 'Merriweather', serif;
+    background: rgba(43, 43, 43, 0.9);
+    color: rgb(200, 3, 111);
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.info button {
+    padding: 10px 10px;
+    width: 7em;
+    border: none;
+    background-color: rgb(16, 138, 255);
+    border-radius: 15px;
+}
+
+.info a {
+    color: #F2F2F2;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info p {
+    color: #F2F2F2;
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.item-contenido:hover .info {
+    display: block;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(200, 3, 111);
+    transition: opacity 0.5s linear 1s;
+}
+
+/* --------- GRID --------- */
+
+.grid {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+    opacity: 1;
+}
+
+.grid .item {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido {
+    position: relative;
+}
+
+.grid .item img {
+    border-radius: 15px;
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+
+/* -------------- CONTACTO -------------- */
+
+/* -------------------------------------- */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(16, 138, 255);
+}
+
+.contacto h2 {
+    padding-bottom: 3px;
+    text-align: center;
+    border-radius: 15px;
+    color: rgb(16, 138, 255);
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgba(43, 43, 43, 0.9);
+}
+
+input {
+    background-color: rgba(245, 245, 245);
+    width: 408px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(16, 138, 255);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    background-color: rgba(245, 245, 245);
+    width: 405px;
+    height: 150px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(16, 138, 255);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+label {
+    display: block;
+    float: center;
+}
+
+.envia_mail {
+    border-radius: 15px;
+    height: 45px;
+    width: 408px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: rgb(16, 138, 255);
+    border-color: rgb(16, 138, 255);
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button p {
+    color: #fff;
+}
+
+
+/* -------------- FOOTER -------------- */
+
+/* ------------------------------------ */
+
+footer .redes-sociales {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+    display: block;
+    margin: 15px;
+    text-align: center;
+    transition: .3s ease all;
+}
+
+footer .redes-sociales a i {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+footer .contenedor-icono:hover a {
+    animation: icono .5s ease;
+}
+
+@keyframes icono {
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+footer .creado-por {
+    text-align: center;
+    font-size: 14px;
+    color: #F2F2F2;
+    background-color: rgba(43, 43, 43, 0.9);
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-width: 2px;
+    border-color: #D4B244;
+}
+
+/* --------- MEDIAQUERIES --------- */
+
+@media screen and (max-width: 700px) {
+    .grid .item {
+        width: calc(50% - 20px);
+    }
+    header .barra-busqueda {
+        width: 100%;
+    }
+}
