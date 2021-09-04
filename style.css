@@ -178,7 +178,6 @@ header button img {
 }
 
 .competencias h2 {
-    padding-bottom: 5px;
     text-align: center;
     border-radius: 15px;
     color: #D4B244;
@@ -188,15 +187,11 @@ header button img {
 }
 
 .competencias .logos {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 20px;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 .competencias .contenedor-imagen:hover {
-    animation: icono .5s ease;
+    box-shadow: 0px 0px 10px 0px #333333;
 }
 
 .competencias img {
@@ -352,10 +347,14 @@ input {
     margin-bottom: 20px;
 }
 
+input:focus, textarea:focus {
+    outline: none;
+}
+
 textarea {
     background-color: rgba(245, 245, 245);
     width: 405px;
-    height: 150px;
+    height: 120px;
     border-radius: 15px;
     border-style: solid;
     border-width: 2px;
@@ -372,8 +371,9 @@ label {
 }
 
 .envia_mail {
+    font-family: 'Merriweather', serif;
     border-radius: 15px;
-    height: 45px;
+    height: 35px;
     width: 408px;
     padding-left: 5px;
     padding-right: 5px;
