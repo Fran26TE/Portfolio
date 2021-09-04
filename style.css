@@ -23,7 +23,6 @@ a {
     margin: auto;
 }
 
-
 /* -------------- MODO DIURNO -------------- */
 
 /* ----------------------------------------- */
@@ -52,6 +51,10 @@ a {
     color: #333333;
 }
 
+.competencias.tema h2 {
+    background-color: rgba(212, 212, 212, 0.9);
+}
+
 .proyectos.tema h2 {
     background-color: rgba(212, 212, 212, 0.9);
 }
@@ -76,7 +79,6 @@ a {
     background-color: rgba(212, 212, 212, 0.9);
     color: #333333;
 }
-
 
 /* -------------- MENÚ -------------- */
 
@@ -144,7 +146,6 @@ header button img {
     padding-top: 100px;
 }
 
-
 /* -------------- BIENVENIDO -------------- */
 
 /* ---------------------------------------- */
@@ -176,6 +177,32 @@ header button img {
     color: #D4B244;
 }
 
+.competencias h2 {
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 15px;
+    color: #D4B244;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgba(43, 43, 43, 0.9);
+}
+
+.competencias .logos {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.competencias .contenedor-imagen:hover {
+    animation: icono .5s ease;
+}
+
+.competencias img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /* -------------- PROYECTOS -------------- */
 
@@ -291,7 +318,6 @@ header button img {
     vertical-align: top;
 }
 
-
 /* -------------- CONTACTO -------------- */
 
 /* -------------------------------------- */
@@ -364,7 +390,6 @@ label {
 button p {
     color: #fff;
 }
-
 
 /* -------------- FOOTER -------------- */
 

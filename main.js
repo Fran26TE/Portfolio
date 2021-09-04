@@ -49,6 +49,7 @@ const bligth = document.querySelector('#bligth');
 const fondo = document.querySelector('#fondo');
 const menu = document.querySelector('#menu');
 const bienvenido = document.querySelector('#bienvenido');
+const habilidades = document.querySelector('#competencias');
 const proyectos = document.querySelector('#proyectos');
 const contacto = document.querySelector('#contacto');
 const pie = document.querySelector('#pie');
@@ -60,6 +61,7 @@ bligth.addEventListener('click', e => {
 	fondo.classList.toggle('tema');
 	menu.classList.toggle('tema');
 	bienvenido.classList.toggle('tema');
+	habilidades.classList.toggle('tema');
 	proyectos.classList.toggle('tema');
 	contacto.classList.toggle('tema');
 	pie.classList.toggle('tema');
@@ -79,6 +81,7 @@ function load() {
 		fondo.classList.add('tema');
 		menu.classList.add('tema');
 		bienvenido.classList.add('tema');
+		habilidades.classList.toggle('tema');
 		proyectos.classList.add('tema');
 		contacto.classList.add('tema');
 		pie.classList.add('tema');
