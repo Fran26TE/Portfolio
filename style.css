@@ -347,7 +347,7 @@ input {
     margin-bottom: 20px;
 }
 
-input;focus  {
+input:focus  {
     outline: none;
 }
 
